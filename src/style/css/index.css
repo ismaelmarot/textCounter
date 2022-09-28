@@ -1,0 +1,113 @@
+/*========== COLORS ==========*/
+/*========== FONTS ==========*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+/*========== LISTS ==========*/
+/*========== MIXINS ==========*/
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.body {
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../../img/img-space.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ui-input-container {
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  max-width: 30rem;
+  padding: 3rem;
+  border-radius: 4px;
+  background-color: white;
+}
+.ui-input-container h2 {
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.ui-input-container .ui-form-input-container {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.ui-form-input {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #1a73e8;
+  outline: 0;
+  width: 100%;
+  min-height: 10em;
+  max-height: 50vh;
+}
+
+.form-input-label {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  color: #1a73e8;
+  font-size: 0.85rem;
+  padding-right: 0.33rem;
+  padding-left: 0.33rem;
+  background: white;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+.ui-form-btn {
+  padding: 13px 15px;
+  border-radius: 8px;
+  background: #1a73e8;
+  outline: 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.error .ui-form-input, .error .form-input-label {
+  border-color: #d50000;
+  color: #d50000;
+}
+
+p {
+  width: 100%;
+  padding-left: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/*# sourceMappingURL=index.css.map */

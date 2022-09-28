@@ -1,0 +1,76 @@
+@use '_variables' as var
+@use '_mixins' as mix
+
+*
+  font-family: var.$font-1
+  
+.body
+  @include mix.flex-column (center,center)
+  @include mix.setHeightWidth(100vh,100%)
+  box-sizing: border-box
+  background-image: url('../../img/img-space.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  
+.ui-input-container
+  @include mix.flex-column (center,center)
+  max-width: 30rem
+  padding: 3rem
+  border-radius: 4px
+  background-color: nth(var.$colors,2)
+
+  h2
+    width: 100%
+    font-family: var.$font-1
+    font-size: 2rem
+    font-weight: 700
+    margin-bottom: 1rem
+ 
+  .ui-form-input-container  
+    font-size: 1.5rem 
+    margin-bottom: 1rem
+    display: block
+ 
+.ui-form-input
+  padding: 1rem
+  border-radius: 8px
+  border: 2px solid rgba(26, 115, 232, 1)
+  outline: 0
+  width: 100%
+  min-height: 10em
+  max-height: 50vh  
+ 
+.form-input-label
+  position: absolute 
+  top: -7px
+  left: 10px 
+  color: rgba(26, 115, 232, 1) 
+  font-size: 0.85rem
+  padding-right: 0.33rem 
+  padding-left: 0.33rem 
+  background: rgba(255, 255, 255, 1)
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1)
+  font-family: sans-serif
+  text-transform: capitalize
+ 
+.ui-form-btn
+  padding: 13px 15px  
+  border-radius: 8px 
+  background: rgba(26, 115, 232, 1) 
+  outline: 0
+  width: 100% 
+  border: none 
+  cursor: pointer 
+  font-size: 1rem 
+  color: white  
+  font-weight: 500
+ 
+.error .ui-form-input, .error .form-input-label
+  border-color: rgba(213, 0, 0, 1)
+  color: rgba(213, 0, 0, 1)
+
+p
+  width: 100%
+  padding-left: 1rem
+  font-family: var.$font-1
